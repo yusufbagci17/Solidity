@@ -1,0 +1,238 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "islemSayisi",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_siparisId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_posta",
+						"type": "string"
+					}
+				],
+				"name": "postaKoduGuncelle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sahip",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_siparisId",
+						"type": "uint256"
+					}
+				],
+				"name": "siparisGetir",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "musteri",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "postaKodu",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "urunler",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "enum Modifiers.Durum",
+								"name": "durum",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Modifiers.Siparis",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_siparisId",
+						"type": "uint256"
+					}
+				],
+				"name": "siparisIlerle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_postaKodu",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_urunler",
+						"type": "uint256[]"
+					}
+				],
+				"name": "siparisOlustur",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "siparisler",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "musteri",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "postaKodu",
+						"type": "string"
+					},
+					{
+						"internalType": "enum Modifiers.Durum",
+						"name": "durum",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Kontrat olusturucu, kontrati dagitan kisiyi sahip olarak atar."
+				},
+				"postaKoduGuncelle(uint256,string)": {
+					"details": "Bir siparisin posta kodunu gunceller.",
+					"params": {
+						"_posta": "Yeni posta kodu.",
+						"_siparisId": "Posta kodu guncellenecek siparisin ID'si."
+					}
+				},
+				"siparisGetir(uint256)": {
+					"details": "Bir siparisin bilgilerini getirir.",
+					"params": {
+						"_siparisId": "Bilgileri alinacak siparisin ID'si."
+					},
+					"returns": {
+						"_0": "Siparis bilgileri."
+					}
+				},
+				"siparisIlerle(uint256)": {
+					"details": "Bir siparisin durumunu bir sonraki asamaya ilerletir.",
+					"params": {
+						"_siparisId": "Ilerletilecek siparisin ID'si."
+					}
+				},
+				"siparisOlustur(string,uint256[])": {
+					"details": "Yeni bir siparis olusturur.",
+					"params": {
+						"_postaKodu": "Siparisin gonderilecegi posta kodu.",
+						"_urunler": "Siparis edilen urunlerin ID'lerinden olusan liste."
+					},
+					"returns": {
+						"_0": "Olusturulan siparisin ID'si."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/modifer.sol": "Modifiers"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/modifer.sol": {
+			"keccak256": "0x5c280d01471fb800f89288ed9a728cf0fc3d6028d5267b3fff9976a8428ceef1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e2f56fc0f903bd7be7e38072b02d4a7cbb70af9f969aa6fb394eb5f654f9a2dd",
+				"dweb:/ipfs/QmXo3LQUyqW8t37DX2337tTWCvQeh5SEoh9SMuvCh7nQ9t"
+			]
+		}
+	},
+	"version": 1
+}
