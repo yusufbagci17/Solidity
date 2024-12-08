@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "debts",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/6.video.sol": "nestemapping"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/6.video.sol": {
+			"keccak256": "0x749e6089793882a618666bbd40059a6a03dbb2728f9c183b7d19549e2cc1e942",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://522946e25eb8b87601107f52e2e25905dcf81b5d36f065d62f4befe0536187f1",
+				"dweb:/ipfs/QmUK9XbdKtnV8sHchB9b2vUw2mmogqvovKbUJFgYpi9qAs"
+			]
+		}
+	},
+	"version": 1
+}

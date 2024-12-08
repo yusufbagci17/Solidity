@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "register",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "registered",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/6.video.sol": "maping"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/6.video.sol": {
+			"keccak256": "0x9980e2d418454d0d6b00e8a5bf7b40939a466d753f5bee570e3c087ae7796c3c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aaef32bd58ec07a6278cbe72f10b0c82e97b6a275310d80cd654124b0c6117c3",
+				"dweb:/ipfs/QmQ4TN4sgfc3mUjPsiMxAoC1HFWNbyVRXj2XRbB8QTeHyv"
+			]
+		}
+	},
+	"version": 1
+}
