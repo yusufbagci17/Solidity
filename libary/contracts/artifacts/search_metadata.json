@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "list",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "data",
+						"type": "uint256"
+					}
+				],
+				"name": "iNDEXoF",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/video12.sol": "search"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/video12.sol": {
+			"keccak256": "0x94b34e7c67a0131bbe368eb03700791522bd9877989bb4727cfec3930b2c9ca6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://974aef73ee7f2ddb030d643f87c479f8c503b2e139bef76889b143912ea3f3b9",
+				"dweb:/ipfs/QmXq7MLVyFJgaU71nwb5yV2nZNFU1TdgEP5gEMJDqAJz5u"
+			]
+		}
+	},
+	"version": 1
+}
