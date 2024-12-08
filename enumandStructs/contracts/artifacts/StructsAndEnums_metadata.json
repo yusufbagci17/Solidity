@@ -1,0 +1,286 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_siparisId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_posta",
+						"type": "string"
+					}
+				],
+				"name": "postaKoduGuncelle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sahip",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_siparisId",
+						"type": "uint256"
+					}
+				],
+				"name": "siparisGetir",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "musteri",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "postaKodu",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "urunler",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "enum StructsAndEnums.Durum",
+								"name": "durum",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct StructsAndEnums.Siparis",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_siparisId",
+						"type": "uint256"
+					}
+				],
+				"name": "siparisIlerle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_postaKodu",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_urunler",
+						"type": "uint256[]"
+					}
+				],
+				"name": "siparisOlustur",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_postaKodu",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_urunler",
+						"type": "uint256[]"
+					}
+				],
+				"name": "siparisOlustur2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_postaKodu",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_urunler",
+						"type": "uint256[]"
+					}
+				],
+				"name": "siparisOlustur3",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "siparisler",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "musteri",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "postaKodu",
+						"type": "string"
+					},
+					{
+						"internalType": "enum StructsAndEnums.Durum",
+						"name": "durum",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Kontrat olusturucu, kontrati dagitan adresi sahip olarak atar."
+				},
+				"postaKoduGuncelle(uint256,string)": {
+					"details": "Bir siparisin posta kodunu gunceller.",
+					"params": {
+						"_posta": "Yeni posta kodu.",
+						"_siparisId": "Posta kodu guncellenecek siparisin ID'si."
+					}
+				},
+				"siparisGetir(uint256)": {
+					"details": "Belirli bir siparisin bilgilerini getirir.",
+					"params": {
+						"_siparisId": "Bilgileri alinacak siparisin ID'si."
+					},
+					"returns": {
+						"_0": "Siparis bilgileri."
+					}
+				},
+				"siparisIlerle(uint256)": {
+					"details": "Bir siparisin durumunu bir sonraki asamaya ilerletir.",
+					"params": {
+						"_siparisId": "Ilerletilecek siparisin ID'si."
+					}
+				},
+				"siparisOlustur(string,uint256[])": {
+					"details": "Yeni bir siparis olusturur.",
+					"params": {
+						"_postaKodu": "Siparisin gonderilecegi posta kodu.",
+						"_urunler": "Siparis edilen urunlerin ID'lerinden olusan liste."
+					},
+					"returns": {
+						"_0": "Olusturulan siparisin ID'si."
+					}
+				},
+				"siparisOlustur2(string,uint256[])": {
+					"details": "Alternatif yolla yeni bir siparis olusturur.",
+					"params": {
+						"_postaKodu": "Siparisin gonderilecegi posta kodu.",
+						"_urunler": "Siparis edilen urunlerin ID'lerinden olusan liste."
+					},
+					"returns": {
+						"_0": "Olusturulan siparisin ID'si."
+					}
+				},
+				"siparisOlustur3(string,uint256[])": {
+					"details": "Alternatif yolla siparis olusturma (daha kısa)."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/enumandstructs.sol": "StructsAndEnums"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/enumandstructs.sol": {
+			"keccak256": "0xf8fe43c8eaa35c6a7fe71779ddc2d7f8a9f767d35885d0fa388e1556caa05df8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be84edf8ff00c9861812fb164a33abbee54e4cb5c6b8f3be525140ad50805f87",
+				"dweb:/ipfs/QmeH8vw5cp9BqM32G5ees8GLiPqNrnDMhjZAWtS19jJ7j1"
+			]
+		}
+	},
+	"version": 1
+}
