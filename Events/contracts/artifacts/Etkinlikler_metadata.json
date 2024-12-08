@@ -1,0 +1,292 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "siparisId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "postaKodu",
+						"type": "string"
+					}
+				],
+				"name": "PostaKoduDegisti",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "siparisId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "musteri",
+						"type": "address"
+					}
+				],
+				"name": "SiparisOlusturuldu",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "islemSayisi",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_siparisId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_posta",
+						"type": "string"
+					}
+				],
+				"name": "postaKoduGuncelle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sahip",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_siparisId",
+						"type": "uint256"
+					}
+				],
+				"name": "siparisGetir",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "musteri",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "postaKodu",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "urunler",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "enum Etkinlikler.Durum",
+								"name": "durum",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Etkinlikler.Siparis",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_siparisId",
+						"type": "uint256"
+					}
+				],
+				"name": "siparisIlerle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_postaKodu",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_urunler",
+						"type": "uint256[]"
+					}
+				],
+				"name": "siparisOlustur",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "siparisler",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "musteri",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "postaKodu",
+						"type": "string"
+					},
+					{
+						"internalType": "enum Etkinlikler.Durum",
+						"name": "durum",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"events": {
+				"PostaKoduDegisti(uint256,string)": {
+					"details": "Posta kodu güncellendiğinde tetiklenen olay.",
+					"params": {
+						"postaKodu": ": Güncellenmiş posta kodu.",
+						"siparisId": ": Posta kodu güncellenen siparişin ID'si."
+					}
+				},
+				"SiparisOlusturuldu(uint256,address)": {
+					"details": "Sipariş oluşturulduğunda tetiklenen olay.",
+					"params": {
+						"musteri": ": Siparişi oluşturan müşterinin adresi.",
+						"siparisId": ": Yeni oluşturulan siparişin ID'si."
+					}
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Kontrat oluşturucu. Kontratı dağıtan adresi sahip olarak ayarlar."
+				},
+				"postaKoduGuncelle(uint256,string)": {
+					"details": "Bir siparişin posta kodunu günceller.",
+					"params": {
+						"_posta": ": Yeni posta kodu.",
+						"_siparisId": ": Posta kodu güncellenecek siparişin ID'si."
+					}
+				},
+				"siparisGetir(uint256)": {
+					"details": "Bir siparişin detaylarını döndürür.",
+					"params": {
+						"_siparisId": ": Detayları döndürülecek siparişin ID'si."
+					},
+					"returns": {
+						"_0": "İstenen siparişin detayları."
+					}
+				},
+				"siparisIlerle(uint256)": {
+					"details": "Bir siparişin durumunu bir sonraki aşamaya ilerletir.",
+					"params": {
+						"_siparisId": ": İlerletilecek siparişin ID'si."
+					}
+				},
+				"siparisOlustur(string,uint256[])": {
+					"details": "Yeni bir sipariş oluşturur.",
+					"params": {
+						"_postaKodu": ": Siparişin gönderileceği posta kodu.",
+						"_urunler": ": Sipariş edilen ürünlerin ID'lerinden oluşan liste."
+					},
+					"returns": {
+						"_0": "Yeni oluşturulan siparişin ID'si."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/events.sol": "Etkinlikler"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/events.sol": {
+			"keccak256": "0x678cfadd679fb04b56a7936a5bcfdf1a3027db85ec9a7d20b14b4d0053dec734",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://859a4ed68a4b94e262bdcb6e761af0ad8456294bfe89848ea5383ba2e3dfb9a2",
+				"dweb:/ipfs/QmTQsQrZzxWYvZPjRx9XYZYB7cDhw2h2af9fbwiSQfua83"
+			]
+		}
+	},
+	"version": 1
+}
