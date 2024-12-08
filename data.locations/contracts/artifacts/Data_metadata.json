@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/13.video.sol": "Data"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/13.video.sol": {
+			"keccak256": "0xd570322d619b2a59aef4bab024112f519bd7bceb56f5546844840a8aaca3e032",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a49750969d9088c2d4390142cc7353c4a5c606e590803b77b9966cb43489565c",
+				"dweb:/ipfs/QmcF7hGSAiyXPRCV5bWyvPk1rojypCGmhThiTjpDxGPd47"
+			]
+		}
+	},
+	"version": 1
+}

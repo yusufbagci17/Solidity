@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "paramUint",
+						"type": "uint256"
+					}
+				],
+				"name": "myFn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/13.video.sol": "DataLoc"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/13.video.sol": {
+			"keccak256": "0x4451895db2c49c1141bc47356bcf36929b1a0136c8539cf56034d1aa332a880e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://597ecba1dd25592fcb38b99f313d1e54fe1da9df00ae9d17a57bb5e08a44163c",
+				"dweb:/ipfs/QmbnXYn9vsJvq2W8b5E5unejAvSPMkK3xrF5Mpezxb7Vmo"
+			]
+		}
+	},
+	"version": 1
+}

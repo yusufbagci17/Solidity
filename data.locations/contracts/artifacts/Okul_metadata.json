@@ -1,0 +1,144 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "yeniIsim",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "yeniYas",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint16",
+						"name": "yeniPuan",
+						"type": "uint16"
+					}
+				],
+				"name": "ogrenciBilgisiDegistirMemory",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "yeniIsim",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "yeniYas",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint16",
+						"name": "yeniPuan",
+						"type": "uint16"
+					}
+				],
+				"name": "ogrenciBilgisiDegistirStorage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "isim",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "yas",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint16",
+						"name": "puan",
+						"type": "uint16"
+					}
+				],
+				"name": "ogrenciEkle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "ogrenciIsmiAl",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/13.video.sol": "Okul"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/13.video.sol": {
+			"keccak256": "0x731015afa64584772808fe731c487aefc94f6d69920abb58b9761d6d5d95d33f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2e4f921eb75365ba71942be99d78a07d7ced503419f89098427ec9a70529d242",
+				"dweb:/ipfs/QmfMrpWYfh8LRSxRaZQ3A93thsEZQrwSGtkm8Yhas96MBB"
+			]
+		}
+	},
+	"version": 1
+}

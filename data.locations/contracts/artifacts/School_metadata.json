@@ -1,0 +1,148 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "age",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint16",
+						"name": "score",
+						"type": "uint16"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "newName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "newAge",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint16",
+						"name": "newScore",
+						"type": "uint16"
+					}
+				],
+				"name": "changeStudentInfoMemory",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "newName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "newAge",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint16",
+						"name": "newScore",
+						"type": "uint16"
+					}
+				],
+				"name": "changeStudentInfoStorage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "getStudentName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"changeStudentInfoMemory(uint256,string,uint8,uint16)": {
+					"details": "Bu işe yaramayacaktır, çünkü oluşturulan currentStudent ömrü fonksiyonun bitişine kadar olan bir değişken ve fonksiyon tamamlandığında silinecektir"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/13.video.sol": "School"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/13.video.sol": {
+			"keccak256": "0x9b94763295bc1c083ecd24d2261d25007480d55f4c5482ebb560fc37b0796593",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9b8555afae1039e1890d99028071732c4c46a2c474febd8fb3da4b3f4e8dd889",
+				"dweb:/ipfs/QmVdhn5dAADFTcqdzeyhcFDx9H4JorYac4PrJE8envsmLt"
+			]
+		}
+	},
+	"version": 1
+}
