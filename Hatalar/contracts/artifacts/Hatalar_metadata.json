@@ -1,0 +1,133 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "kullanici",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "fazlaMiktar",
+						"type": "uint256"
+					}
+				],
+				"name": "FazlaMiktar",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "sebep",
+						"type": "string"
+					}
+				],
+				"name": "Reddedildi",
+				"type": "error"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "miktar",
+						"type": "uint256"
+					}
+				],
+				"name": "cekimYap",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "kullaniciBakiye",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "odemeYap",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "toplamBakiye",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/11.video.sol": "Hatalar"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/11.video.sol": {
+			"keccak256": "0x6689d7f101da0f9eefe2410a12968cefdd6937f8a53d4448d57c09393a3f31c0",
+			"license": "Unlicensed",
+			"urls": [
+				"bzz-raw://f74311e1010bafca248856b7570f6e62d0792978f670edb32e9b7b6b0b382a2a",
+				"dweb:/ipfs/QmXDyPWcupVRYY9Q8hSe3y4Yen8jBcjmC5DstAHKDDSc5X"
+			]
+		}
+	},
+	"version": 1
+}
