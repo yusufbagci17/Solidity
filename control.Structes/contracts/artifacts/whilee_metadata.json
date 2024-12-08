@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/5.videowhile.sol": "whilee"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/5.videowhile.sol": {
+			"keccak256": "0x094ebb24f4223ef9f2b083d40c9bedb703d38698bff992f4a4f3c95b2c82fc12",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://409cf565d6767412aa9b9d553fdccabdbd14ef0a9a8a79a489d2eb016e8f5f97",
+				"dweb:/ipfs/QmbY47zv39Cbs27rwZCZSsfBrjo2oni99CWDUm5i3o6CXR"
+			]
+		}
+	},
+	"version": 1
+}
